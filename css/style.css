@@ -1,0 +1,349 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.bio{
+    background-color: #ff7300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0px;
+}
+
+.dp{
+height: 300px;
+width: 300px;
+border-radius: 50%;
+margin: 20px 20px 20px 20px;
+border: 5px solid #ffffff;
+}
+
+.h2name{
+    color: #ffffff;
+    font-style: bold;
+    font-family: cursive;
+    font-weight:bold;
+    transform: rotate(-5deg);
+    margin-bottom: 10px;
+}
+
+.pname{
+    color: #ffffff;
+    font-style: bold;
+    font-family: cursive;
+    font-weight:bold;
+    margin-bottom: 10px;
+}
+
+.bio_icons{
+    color: #fff;
+    display: grid;
+    grid-template-columns:2fr 2fr 2fr;
+    gap: 30px;
+    /* margin: 5px 5px 5px 5px; */
+}
+
+.about_me{
+display: flex;
+justify-content: center;
+margin: 50px 0px 50px 0px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.about{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 30px 50px 30px 50px;
+}
+
+.info{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    margin: 0px 10px 0px 0px;
+}
+
+.salut_content{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: lighter;
+}
+
+.services{
+    background-color: #ff7300;
+}
+
+.h1services{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.myservices{
+    display: flex;
+}
+
+.slist{
+    width: 35%;
+    text-align: center;
+    margin: 40px 40px 40px 40px;
+    
+}
+.slist > img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.shead{
+    color: #fff ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.spara{
+    color: #fff ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.skill_sac{
+    display: flex;
+    justify-content: center;
+}
+.skill_list{
+        border: 2px solid #ff7300; /* Border color */
+        border-radius: 50%; /* Makes it a circle */
+        padding: 5%; /* Adjust padding to control the size of the circle */
+        text-align: center; /* Centers the text horizontally */
+        margin: 50px 60px 40px 50px;
+}
+
+.timeline_section{
+    min-height: 100vh;
+    padding: 100px 15px;
+}
+
+.timeline_items{
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.timeline_items::before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color:#ff7300;
+    left: calc(50% + 1px);
+}
+
+.timeline_item{
+    margin-bottom: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.timeline_item:last-child{
+    margin-bottom: 0px;
+}
+
+.timeline_item:nth-child(odd){
+padding-right: calc(50% + 30px);
+text-align: right;
+}
+
+.timeline_item:nth-child(even){
+padding-left: calc(50% + 30px);
+}
+
+.timeline_dot{
+    height: 16px;
+    width: 16px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: calc(50% - 6px);
+    border-radius: 50%;
+    top: 10px;
+}
+
+.timeline_date{
+    font-size: 18px;
+    color: #ff7300;
+    margin: 6px 0 15px;
+}
+
+.timeline_content h3{
+    font-size: 20px;
+    margin: 0 0 15px;
+    text-transform: capitalize;
+}
+
+.timeline_content p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+}
+.timeline_content{
+    background-color: #ff7300;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+@media(max-width: 767px){
+    .timeline_items::before{
+        left: 7px;
+    }
+    .timeline_item:nth-child(odd){
+        padding-right: o;
+        text-align: left;
+    }
+    .timeline_item:nth-child(odd),
+    .timeline_item:nth-child(even){
+        padding-left: 37px;
+    }
+    .timeline_dot{
+        left: 0;
+    }
+}
+
+.work{
+    background-color: #ff7300;
+}
+
+.h1work{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    margin: 40px 0 40px 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.work_sac{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.work_sac div{
+    width: 20%;
+    height: 20vh;
+    margin: 20px 10px 20px 10px;
+}
+.work_sac h3 {
+    display: none;
+    padding: 50px 0;
+}
+
+
+.blue{
+    background-image: url(../assets/images/bg\ 5.jpg);
+    text-align: center;
+}
+
+.blue:hover h3 {
+    display: grid;
+}
+
+.red{
+    background-image: url(../assets/images/bg\ 2.jpg);
+    text-align: center;
+}
+
+.red:hover h3 {
+    display: grid;
+}
+
+.green{
+    background-image: url(../assets/images/bg\ 3.jpg);
+    text-align: center;
+}
+
+.green:hover h3 {
+    display: grid;
+}
+
+.purple{
+    background-image: url(../assets/images/bg\ 4.jpg);
+    text-align: center;
+}
+
+.purple:hover h3 {
+    display: grid;
+}
+
+.hire{
+    background-color: #ff7300;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0;
+}
+
+.h1hire{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.phire{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.buttonhire{
+    background-color: #fff;
+    width: 20%;
+    height: 5vh;
+    border-radius: 30px;
+    text-align: center;
+    color: #ff7300;
+    align-self: center;
+    margin: 10px 0 10px 0;
+}
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; /* Aligning to the right */
+        margin: 20px 20px 20px;
+        
+    }
+
+    .tarea{
+        border: 1px solid #ccc;
+    }
+    
+    .box {
+        width: 100%;
+        max-width: 500px; /* Limiting maximum width for responsiveness */
+        height: 30px;
+        border: 1px solid #ccc; /* Adding border style */
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    
+    .buttonreply {
+        background-color:#ff7300;
+        width: 20%;
+        height: 5vh;
+        border-radius: 10px;
+        text-align: center;
+        color: #fff;
+        align-self: center;
+        margin: 10px 0 10px 0;
+    }
+
+
